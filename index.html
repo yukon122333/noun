@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IrisStudy - Обучение для начальной школы</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #FFB6C1;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #F000000; /* Розовый цвет */
+        }
+        .button {
+            background-color: #FF0000; /* Зеленый цвет */
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+        }
+        .reaction {
+            font-size: 2em;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .pig {
+            font-size: 3em; /* Размер смайла свиньи */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Добро пожаловать в IrisStudy!</h1>
+    <p>Приложение для обучения начальной школы с милым маскотом - свиньей!</p>
+
+    <a href="path/to/your/app.apk" download class="button">Скачать приложение</a>
+    <button class="button" onclick="window.location.href='https://your-app-store-link.com'">Скачать через Ру Стор</button>
+
+    <h2>Оцените наше приложение:</h2>
+    <div class="reactions">
+        <span class="reaction" onclick="showMessage('🐷')">🐷</span> <!-- Смайл свиньи -->
+        <span class="reaction" onclick="showMessage('😐')">😐</span>
+        <span class="reaction" onclick="showMessage('😢')">😢</span>
+    </div>
+
+    <h2>Спасибо за ваш отзыв!</h2>
+    <div class="pig">🐷</div> <!-- Смайл свиньи в конце сайта -->
+
+    <script>
+        function showMessage(reaction) {
+            alert("Как я посмотрю, вы никак не успокоитесь. Вы не оставляете мне выбора... " + reaction);
+        }
+    </script>
+
+</body>
+</html>
